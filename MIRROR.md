@@ -5,7 +5,7 @@ installed, scanned and reviewed on its own. It is imported from the `mcp-fundame
 [arhancanli/canlicapital](https://github.com/arhancanli/canlicapital/tree/main/mcp-fundamentals), which is
 where changes are made and tested; this repository is updated from it.
 
-Imported from canlicapital commit `10121fee41325d6e04a3b17715d1ca619a18bfd6`.
+Imported from canlicapital commit `aefa8684b26223e46533e28c07b118ac95f6b97e`.
 
 - npm: https://www.npmjs.com/package/canli-fundamentals-mcp
 - MCP Registry: `io.github.arhancanli/canli-fundamentals-mcp`
