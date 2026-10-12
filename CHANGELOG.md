@@ -1,7 +1,28 @@
 # Changelog
 
+## Unreleased
+
+## 0.6.0
+
+- Three guided workflows: what a company knew on a date, which numbers were restated, and how
+  peers compared as of a date. Concept names, limits, exact schemas and runnable Python,
+  JavaScript and curl examples are available as MCP resources; prompt and resource arguments
+  complete from the supported names.
+
+- Concept lookup reads only declared aliases. `constructor` and `__proto__` previously reached
+  Object's prototype and crashed `cross_section`; they now return the same unknown-concept
+  message as other unreported names. The same guard applies to history and vintage lookup.
+
+
 ## 0.5.0
 
+- Packaging clarification: the npm release includes the opt-in supplied-input audit and expert
+  intake commands and their contracts (verified against the published 0.5.0 package). The
+  repository audit example that imports the repository canonical helper still requires a checkout.
+
+- Security: the MCP SDK (`@modelcontextprotocol/server` and `/client`) moves from 2.1.0 to 2.3.1 for
+  GHSA-6qxp-vccf-f47h (high: the SDK's OAuth client could send credentials to an authorization server
+  chosen by the MCP server). This package does not use the OAuth client; the bump clears `npm audit`.
 - `cross_section`: one measure for up to 50 companies (tickers, CIKs or names) as filed by a date.
   Each row is a company's latest period whose value had been filed by `as_of`, with the value then,
   its filing, `changed_after` and `stale`, in the order asked; companies without a value are named

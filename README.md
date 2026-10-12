@@ -182,3 +182,121 @@ How periods are handled:
 
 Code MIT. The SEC filings and XBRL facts are U.S. government works in the public domain; Canli
 Capital's selection and derived data are CC BY 4.0 (credit "Canli Capital (canlicapital.com)").
+
+
+## Repository audit example (Unreleased)
+
+Backtest developers can call the supplied-vintage audit core through the separate
+[local stdio example](AUDIT_INPUTS.md#repository-stdio-mcp-example-unreleased).
+It reads the exact reference, usage and settings bytes supplied by the client,
+keeps every selected row, and makes missing or uncertain outcomes visible.
+The complete repository checkout and its pinned package dependencies are required.
+The canonical helper lives outside this npm package; `npx canli-fundamentals-mcp`
+and the hosted endpoint continue to expose the existing seven tools.
+
+
+## Opt-in package audit command (Unreleased)
+
+The next substantial fundamentals release is preparing the separate
+`canli-fundamentals-audit` command. This candidate packages its own exact canonical
+helper, supplied-input core and stdio adapter, plus [the input contract](AUDIT_INPUTS.md#portable-opt-in-package-command-unreleased).
+It requires no repository checkout. The existing repository example above remains
+unchanged; its original helper location does not describe this new packaged copy.
+
+After a reviewed candidate tarball has been placed in a private installation,
+configure an MCP client with the absolute path to
+`node_modules/.bin/canli-fundamentals-audit`, and supply the four exact input fields
+described in the contract. This command lists one `audit_inputs` tool.
+`canli-fundamentals-mcp` and hosted endpoints still list the existing seven tools.
+The new command has not been published to npm; version0.5.0 is unchanged while
+PRIMARY assembles the substantial release. Do not use a current npm download as
+evidence that this Unreleased command is available.
+
+
+## Unreleased: offline expert-submission audit
+
+The repository candidate adds the separate opt-in `canli-expert-submission-audit`
+command. It audits supplied packet and review bytes while preserving the complete
+selected denominator, missing roles and unknown human/expert/rights outcomes.
+See [the standalone packaged contract and synthetic SDK workflow](EXPERT_SUBMISSIONS.md).
+The command is not included in the already published `0.5.0` artifact. The default
+seven-tool server and `canli-fundamentals-audit` retain their existing behavior.
+
+
+## Unreleased supplied-file audit client
+
+The candidate package adds `canli-fundamentals-audit-files`, an offline convenience command over the existing compact audit. It preserves all selected rows, exact supplied-byte bindings and unknown outcomes, and closes its one owned stdio child before success. See [the complete fictional file workflow](AUDIT_INPUTS_CLIENT.md). This candidate is not an npm release or an installation/adoption measurement.
+
+```sh
+canli-fundamentals-audit-files --root "$PACKAGE_ROOT" --reference "$REFERENCE" --expected-reference-sha256 "$REFERENCE_SHA256" --usage "$USAGE" --settings "$SETTINGS"
+```
+
+All paths must be absolute; `PACKAGE_ROOT` is this same admitted package and `REFERENCE_SHA256` pins the exact reference bytes. The five flags occur once each. The default seven-tool command and existing audit commands keep their behavior.
+
+
+### Supplied-file expert reconciliation (Unreleased)
+
+The candidate package command `canli-expert-submission-files` audits caller-owned
+local gold, intake, evidence and reviewer-return files through the unchanged
+expert-submission core. [EXPERT_SUBMISSION_FILES.md](EXPERT_SUBMISSION_FILES.md)
+provides six complete synthetic input blocks and a private exclusive-output
+workflow. The command preserves the full selected denominator, missing-role
+worklists, exact raw bindings and unknown human/expertise/independence/rights
+outcomes. It needs no SDK child or network. This is a source candidate;
+the unchanged `0.5.0` field is not evidence of npm availability or publication.
+
+
+## Supplied-file expert SDK client (Unreleased)
+
+The opt-in `canli-expert-submission-client` captures explicitly supplied private
+files and calls the existing local expert stdio audit once through locked SDK2.1
+legacy negotiation. [EXPERT_SUBMISSION_CLIENT.md](EXPERT_SUBMISSION_CLIENT.md)
+contains six complete synthetic inputs and the command. It saves the complete
+report privately while preserving raw bindings, all selected rows, missing roles
+and unknown human/expertise/independence/rights/label/adjudication outcomes.
+
+Observed15s work and one5s closure/output/terminal reserve share an absolute clock;
+encoded request/report/tool/frame bounds are enforced before native effects.
+Known same-child closure and exclusive0600/fsync/readback output are required for
+success. The direct no-SDK expert file command remains unchanged. This repository
+candidate and its new cases are written until exact new-head automaticCI; no
+installation/publication/adoption or authenticated-source claim follows.
+
+
+### Supplied-file expert intake preparation (Unreleased)
+
+The opt-in `canli-expert-intake-files` command prepares the complete expert-intake
+report from four explicit supplied files and zero to64 ordered opaque evidence
+files. [The complete synthetic workflow](EXPERT_INTAKE_FILES.md) uses package-local
+source and starts no SDK child. It preserves full selected-N, blank reviewer
+packets and adjudicator worklists; real humans, expertise, independence, rights,
+labels and admission remain unverified/NULL. Private exclusive output is fsynced
+and read back, with uncertainty refusing and retaining the artifact. This is a
+repository Unreleased source candidate; npm availability and installation are
+separate. Fixtures are WRITTEN_UNRUN before this signed source's remote CI.
+
+
+### Supplied-byte expert-intake preparation (Unreleased)
+
+The opt-in `canli-expert-intake-prepare` command exposes one
+`filingfacts_prepare_expert_intake` tool over the supplied-byte preparation core.
+Use [EXPERT_INTAKE_STDIO.md](EXPERT_INTAKE_STDIO.md) for the complete package SDK
+workflow and four marked synthetic input documents. The tool retains the entire
+preparation report, two blank same-gold reviewer packets, and the distinct
+adjudicator worklist. All selected items and missing-role/evidence coverage remain
+visible; authenticated humans, expertise, independence, rights, labels and
+admission remain unknown.
+
+Original request keys and all bounded base64 metadata are admitted before payload
+decode. The complete report appears both as structured content and exact JSON text.
+The standalone endpoint uses the same absolute work clock through projection and
+serialization, followed by a fresh observation immediately before its native
+write. The guide documents bounded owned-child closure. This opt-in command is
+separate from the existing default tool surface and does not fetch sources,
+recruit reviewers, dispatch packets, or make rights/admission decisions.
+
+## Prompts and resources (Unreleased)
+
+Three prompts do the common jobs in one step: `known_on_date` (company, as_of), `restatement_review` (company, optional concept) and `peers_as_of` (companies, concept, as_of). In clients that support completion, `company` completes from the SEC ticker list and `concept` from the plain names.
+
+Resources: `canli://concepts` lists every plain name and the tags behind it; `canli://limits` gives the limits to quote; `canli://schemas/{tool}` gives a tool's exact JSON Schemas; `canli://examples/{language}/{tool}` gives a working call in `python`, `javascript` or `curl`.
