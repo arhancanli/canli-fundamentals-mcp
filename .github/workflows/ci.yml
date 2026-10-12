@@ -27,7 +27,7 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - run: npm audit --audit-level=high
-      - run: node --test test/*.test.mjs
+      - run: node --test test/tools.test.mjs test/stdio.test.mjs test/packaging.test.mjs test/guides.test.mjs
       - name: The packed tarball installs from the lockfile and starts
         run: |
           npm pack --silent
